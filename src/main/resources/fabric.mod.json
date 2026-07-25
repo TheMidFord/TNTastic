@@ -1,11 +1,11 @@
 {
 	"schemaVersion": 1,
-	"id": "examplemod",
+	"id": "tntastic",
 	"version": "${version}",
-	"name": "Example Mod",
+	"name": "TNTastic!",
 	"description": "This mod aims to help new BTA modders.",
 	"authors": [
-		"Turnip Labs"
+		"The_Midford"
 	],
 	"contact": {
 		"homepage": "",
@@ -16,11 +16,14 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"turniplabs.examplemod.ExampleMod"
+          "malicedev.tntastic.Main"
+		],
+		"client": [
+			"malicedev.tntastic.ModClient"
 		]
 	},
 	"mixins": [
-		"examplemod.mixins.json"
+		"tntastic.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=${fabricloader}",
